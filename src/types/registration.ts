@@ -1,10 +1,10 @@
-export const CredentialsTypeValues = ['BASIC_AUTH']
+export const CredentialsTypeValues = ['BASIC_AUTH', 'HMAC'] as const
 export type CredentialsType = typeof CredentialsTypeValues[number]
 
-export const PlatformValues = ['LITHIUM']
+export const PlatformValues = ['LITHIUM', 'EXTERNAL'] as const
 export type Platform = typeof PlatformValues[number]
 
-export const ModeValues = ['LIVE']
+export const ModeValues = ['LIVE', 'MAINTENANCE', 'MONITORING'] as const
 export type Mode = typeof ModeValues[number]
 
 export type Credentials = {

@@ -1,8 +1,8 @@
-export const NetworkKeyValues = ['apple']
+export const NetworkKeyValues = ['apple'] as const
 
 export type NetworkKey = typeof NetworkKeyValues[number]
 
-export const ScopeValues = ['PUBLIC', 'PRIVATE']
+export const ScopeValues = ['PUBLIC', 'PRIVATE'] as const
 
 export type Scope = typeof ScopeValues[number]
 

@@ -1,4 +1,4 @@
-export const ReferralSourceValues = ['SHORTLINK', 'ADS', 'MESSENGER_CODE']
+export const ReferralSourceValues = ['SHORTLINK', 'ADS', 'MESSENGER_CODE'] as const
 
 export type ReferralSource = typeof ReferralSourceValues[number]
 

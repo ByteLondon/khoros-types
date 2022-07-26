@@ -1,4 +1,4 @@
-export const ActionTypeValues = ['postback', 'reply']
+export const ActionTypeValues = ['postback', 'reply'] as const
 
 export type ActionType = typeof ActionTypeValues[number]
 

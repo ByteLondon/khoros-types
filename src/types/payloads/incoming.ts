@@ -5,7 +5,7 @@ import {Action} from "./actions";
 import {Location} from "../../typeguards/payloads/location";
 import {Referral} from "../../typeguards/payloads/referral";
 
-export const IncomingMessageTypeValues = ['message', 'update']
+export const IncomingMessageTypeValues = ['message', 'update'] as const
 
 export type IncomingMessageType = typeof IncomingMessageTypeValues[number]
 
