@@ -1,4 +1,14 @@
-export const NetworkKeyValues = ['apple'] as const
+export const NetworkKeyValues = [
+    'apple',
+    'facebook',
+    'googlemessages',
+    'sms',
+    'twitter',
+    'wechat',
+    'whatsapp',
+    'smooch',
+    'instagram'
+] as const
 
 export type NetworkKey = typeof NetworkKeyValues[number]
 
