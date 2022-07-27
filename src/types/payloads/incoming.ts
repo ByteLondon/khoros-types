@@ -2,8 +2,8 @@ import {Coordinate} from "../coordinate";
 import {Author} from "../author";
 import {Owner} from "../owner";
 import {Action} from "./actions";
-import {Location} from "../../typeguards/payloads/location";
-import {Referral} from "../../typeguards/payloads/referral";
+import {Location} from "./location";
+import {Referral} from "./referral";
 
 export const IncomingMessageTypeValues = ['message', 'update'] as const
 

@@ -1,11 +1,10 @@
-export const ReferralSourceValues = ['SHORTLINK', 'ADS', 'MESSENGER_CODE'] as const
+import {Referral, ReferralSourceValues} from "../../types/payloads/referral";
+import {Is, isLiteral, isNumber, isString, isStruct, isUnion} from "@byte.london/byteguards";
 
-export type ReferralSource = typeof ReferralSourceValues[number]
-
-export type Referral = {
-    ref: string
-    source: ReferralSource,
-    type: 'OPEN_THREAD'
-    adId: string | number
-    refererUri: string
-}
+export const isReferral: Is<Referral> = isStruct({
+    ref: isString,
+    source: isLiteral(...ReferralSourceValues),
+    type: isLiteral<'OPEN_THREAD'>('OPEN_THREAD'),
+    adId: isUnion(isString, isNumber),
+    refererUri: isString
+})
