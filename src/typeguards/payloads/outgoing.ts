@@ -16,7 +16,7 @@ import {isMediaObject} from "./media";
 import {MediaTypeValues} from "../../types/payloads/media";
 import {
     Outgoing,
-    OutgoingBase,
+    OutgoingBase, OutgoingList,
     OutgoingMedia,
     OutgoingPayload,
     OutgoingRichContent
@@ -27,10 +27,13 @@ export const isOutgoingBase: Is<OutgoingBase> = isStruct({
     text: isOptional(isString),
     type: isLiteral<'message'>('message'),
     author: isAuthorWithProperties,
-    list: isUnknown,
     payload: isString,
     processSynchronously: isOptional(isBoolean)
 })
+
+export const isOutgoingList: Is<OutgoingList> = isIntersection(isOutgoingBase, isStruct({
+    list: isUnknown
+}))
 
 export const isOutgoingPayload: Is<OutgoingPayload> = isIntersection(isOutgoingBase, isStruct({
     payload: isString

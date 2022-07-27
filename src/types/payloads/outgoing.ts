@@ -7,9 +7,12 @@ export type OutgoingBase = {
     text?: string,
     type: "message",
     author: AuthorWithProperties
-    list: unknown,
     payload: string,
     processSynchronously?: boolean
+}
+
+export type OutgoingList = OutgoingBase & {
+    list: unknown
 }
 
 export type OutgoingPayload = OutgoingBase & {
