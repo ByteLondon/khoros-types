@@ -7,7 +7,6 @@ export type OutgoingBase = {
     text?: string,
     type: "message",
     author: AuthorWithProperties
-    payload: string,
     processSynchronously?: boolean
 }
 

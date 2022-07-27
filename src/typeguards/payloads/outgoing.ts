@@ -27,7 +27,6 @@ export const isOutgoingBase: Is<OutgoingBase> = isStruct({
     text: isOptional(isString),
     type: isLiteral<'message'>('message'),
     author: isAuthorWithProperties,
-    payload: isString,
     processSynchronously: isOptional(isBoolean)
 })
 
