@@ -1,10 +1,12 @@
 {
   "name": "@byte.london/khoros-types",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && tsc",
+    "deploy": "npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "BYTE/DEPT®",

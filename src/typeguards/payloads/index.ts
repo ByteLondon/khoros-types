@@ -7,3 +7,11 @@ import {isCreatedConversation} from "./created-conversation";
 import {isMessage} from "./message";
 
 export const isPayload: Is<Payload> = isUnion(isAgentResponse, isIncoming, isClosedConversation, isCreatedConversation, isMessage);
+
+export {
+    isAgentResponse,
+    isIncoming,
+    isClosedConversation,
+    isCreatedConversation,
+    isMessage
+}
