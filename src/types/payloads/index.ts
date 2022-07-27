@@ -9,5 +9,6 @@ export * from './incoming'
 export * from './closed-conversation'
 export * from './created-conversation'
 export * from './message'
+export * from './outgoing'
 
 export type Payload = AgentResponse | Incoming | ClosedConversation | CreatedConversation | Message
