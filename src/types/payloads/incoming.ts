@@ -19,7 +19,7 @@ export type Incoming = {
     owner: Owner,
     publishedTS: number
     receivedTS: number
-    properties: {
+    properties?: {
         customField: string
         messageSpecificValues: string
     }

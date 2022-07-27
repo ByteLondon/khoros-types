@@ -19,9 +19,9 @@ export const isIncoming: Is<Incoming> = isStruct({
     owner: isOwner,
     publishedTS: isNumber,
     receivedTS: isNumber,
-    properties: isStruct({
+    properties: isOptional(isStruct({
         customField: isString,
         messageSpecificValues: isString
-    }),
+    })),
     referral: isOptional(isReferral)
 })
