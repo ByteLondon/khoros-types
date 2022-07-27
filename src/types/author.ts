@@ -1,6 +1,6 @@
 export type Author = {
     id: string,
-    fullName: string
+    fullName?: string
 }
 
 export type AuthorWithProperties = Author & {

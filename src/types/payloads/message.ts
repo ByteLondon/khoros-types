@@ -9,6 +9,6 @@ export type Message = {
     owner: Owner,
     publishedTS: number,
     receivedTS: number,
-    properties: Object
+    properties?: Object
     type: 'message'
 }
