@@ -11,7 +11,7 @@ export type IncomingMessageType = typeof IncomingMessageTypeValues[number]
 
 export type Incoming = {
     coordinate: Coordinate,
-    text: string,
+    text?: string,
     type: IncomingMessageType,
     actions?: Action[],
     location?: Location,

@@ -11,7 +11,7 @@ export const isIncomingMessageType: Is<IncomingMessageType> = isLiteral(...Incom
 
 export const isIncoming: Is<Incoming> = isStruct({
     coordinate: isCoordinate,
-    text: isString,
+    text: isOptional(isString),
     type: isIncomingMessageType,
     actions: isOptional(isArray(isAction)),
     location: isOptional(isLocation),
