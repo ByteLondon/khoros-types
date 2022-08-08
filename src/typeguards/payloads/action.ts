@@ -1,5 +1,5 @@
 import {Is, isLiteral, isOptional, isString, isStruct} from "@byte.london/byteguards";
-import {Action, ActionTypeValues} from "../../types/payloads/actions";
+import {Action, ActionTypeValues} from "../../types";
 
 const isActionType = isLiteral(...ActionTypeValues)
 

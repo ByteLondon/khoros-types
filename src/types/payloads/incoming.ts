@@ -1,7 +1,7 @@
 import {Coordinate} from "../coordinate";
 import {Author} from "../author";
 import {Owner} from "../owner";
-import {Action} from "./actions";
+import {Action} from "./action";
 import {Location} from "./location";
 import {Referral} from "./referral";
 

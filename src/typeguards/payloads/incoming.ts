@@ -3,7 +3,7 @@ import {Is, isArray, isLiteral, isNumber, isOptional, isString, isStruct} from "
 import {isCoordinate} from "../coordinate";
 import {isAuthor} from "../author";
 import {isOwner} from "../owner";
-import {isAction} from "./actions";
+import {isAction} from "./action";
 import {isLocation} from "./location";
 import {isReferral} from "./referral";
 

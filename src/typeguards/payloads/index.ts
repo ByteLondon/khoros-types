@@ -6,10 +6,12 @@ import {isClosedConversation} from "./closed-conversation";
 import {isCreatedConversation} from "./created-conversation";
 import {isMessage} from "./message";
 import {isOutgoing} from "./outgoing";
+import { isAction } from "./action";
 
 export const isPayload: Is<Payload> = isUnion(isAgentResponse, isIncoming, isClosedConversation, isCreatedConversation, isMessage);
 
 export {
+    isAction,
     isAgentResponse,
     isIncoming,
     isClosedConversation,

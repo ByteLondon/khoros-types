@@ -4,6 +4,7 @@ import {ClosedConversation} from "./closed-conversation";
 import {CreatedConversation} from "./created-conversation";
 import {Message} from "./message";
 
+export * from './action'
 export * from './agent-response'
 export * from './incoming'
 export * from './closed-conversation'
