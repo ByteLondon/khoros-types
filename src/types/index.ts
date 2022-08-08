@@ -6,3 +6,4 @@ export * from "./owner";
 export * from "./conversation";
 export * from './payloads'
 export * from "./payloads/payload-types";
+export * from './closed-comment'
